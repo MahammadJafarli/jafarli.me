@@ -1,0 +1,912 @@
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+}
+@media screen and (max-width: 768px) {
+         .side-collapse-container{
+             width:100%;
+             position:relative;
+             left:0;
+             transition:left .4s;
+         }
+         .side-collapse-container.out{
+             left:200px;
+         }
+         .side-collapse {
+             top:50px;
+             bottom:0;
+             left:0;
+             width:200px;
+             position:fixed;
+             overflow:hidden;
+             transition:width .4s;
+         }
+         .side-collapse.in {
+             width:0;
+         }
+     }
+
+     .border_bottom{
+       width: 70px;
+       height: 2px;
+       background: black;
+       margin: 0 auto;
+     }
+
+     a{
+       text-decoration: none;
+       cursor: pointer;
+         .move_top{
+           z-index: 50;
+           width: 40px;
+           height: 40px;
+           border-radius: 100%;
+           background: black;
+           opacity: 0.5;
+           bottom: 35px;
+           right: 35px;
+           position: fixed;
+                i{
+                  color: white;
+                  font-size: 20px;
+                  margin-top: 10px;
+                }
+         }
+
+       }
+// navbar sectionun bashlangici
+#navbar{
+  background-color: rgba(255, 255, 255, 0);
+  .navbar_change{
+    z-index: 1;
+
+  }
+
+  header{
+    padding-top: 8px;
+    .navbar-header{
+      button{
+        padding-top: 2px;
+        .bar{
+          color:white;
+          font-size: 23px;
+        }
+      }button:focus{
+          outline: none;
+        }
+    }
+    .logo{
+      margin-top: 10px;
+    }
+  #nese{
+    opacity: 1;
+    nav{
+      ul{
+        // text-align: right !important;
+        li{
+          a{
+            color:white;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+            font-family: 'Open Sans';
+            cursor: pointer;
+              .nav-border{
+                margin-top: 5px;
+                height: 2px;
+                background: #78beff;
+                width: 0px;
+                transition: .7s;
+              }
+          }a:hover{
+            background-color: transparent;
+              .nav-border{
+                width: 100%;
+                transition: .7s;
+              }
+          }a:focus{
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  }
+}
+// navbar sectiononun sonu
+
+// header sectionun bashlangici
+#welcome{
+  background-image:url('../../images/pc5.jpg') ;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  // background-position: center;
+  width: 100%;
+  object-fit: cover;
+  // text-align: center;
+    .center{
+      position: absolute;
+      top:38%;
+      width: 100%;
+        h3{
+          font-family: 'Open Sans';
+          color:white;
+          font-size: 3.0rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+        p{
+          font-size: 1.5rem;
+          font-family: 'Open Sans';
+          color:white;
+        }
+        button{
+          margin-top: 20px;
+          background: transparent;
+          color: #333;
+          -webkit-box-shadow: 0 0 0 2px #fff;
+          box-shadow: 0 0 0 2px #fff;
+          color:white;
+          font-family: 'Open Sans';
+          text-transform: uppercase;
+          border-radius: 0px;
+          border: 0px solid #fff;
+          transition: .5s;
+        }button:hover{
+          background: white;
+          color:black;
+          transition: .5s;
+        }button:focus{
+            outline: none;
+          }
+    }
+}
+// header sectionun sonu
+
+// about sectionun bashlangici
+#about{
+  min-height: 300px;
+  background-color: white;
+  padding: 50px 0px;
+  width: 100%;
+  h6{
+    font-family: 'Open Sans';
+    font-size: 26px;
+    line-height: 24px;
+    // text-align: center;
+    margin-bottom: 10px;
+    // display: inline-block;
+  }
+    .about{
+      margin-top: 40px;
+      .about_img{
+        border-radius: 100%;
+        width: 140px;
+        height: 140px;
+        border: 10px solid #eee;
+        padding: 10px;
+      }
+      .about_name{
+        font-size: 20px;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-family: 'Open Sans';
+        font-weight: 600;
+      }
+      .about_position{
+        color: #3eb991;
+        font-size: 1.1em;
+        font-weight: 400;
+        color: #162221;
+        line-height: 25px;
+        letter-spacing: 1px;
+        word-spacing: 0.18em;
+        font-family: 'Open Sans';
+      }
+    }
+    .about_title{
+      font-size: 25px;
+      line-height: 24px;
+      font-weight: 600;
+      font-family: 'Open Sans';
+    }
+    .about_text{
+      margin-top: 20px;
+      color: #777;
+      font-size: 1.2em;
+      font-weight: 400;
+      color: #162221;
+      line-height: 25px;
+      letter-spacing: 1px;
+      word-spacing: 0.18em;
+      font-family: 'Open Sans';
+      padding-right: 20px;
+    }
+    button{
+      margin-top: 20px;
+      background: white;
+      color:black;
+      border-radius: 0px;
+      border: 1px solid #3EB991;
+      padding: 10px 20px;
+      font-size: 16px;
+      transition: all .5s ease;
+      font-family: 'Open Sans';
+    }button:hover{
+      background: black;
+      color:white;
+      transition: all .5s ease;
+    }button:focus{
+        outline: none;
+      }
+}
+// about sectionun sonu
+
+//skills sectionun bashlangici
+#skills{
+  min-height: 300px;
+  background: white;
+  width: 100%;
+    h6{
+      font-size: 26px;
+      line-height: 24px;
+      font-family: 'Open Sans';
+      margin-bottom: 10px;
+    }
+    .skil{
+      width: 48%;
+      margin-bottom: 10px;
+      float: left;
+      margin-right: 15px;
+        p{
+          font-size: 15px;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-family: 'Open Sans';
+          margin-bottom: 5px;
+        }
+        .progress{
+          height: 10px;
+        }
+    }
+}
+//skilss sectionun sonu
+
+
+// services sectionin bashlnagici
+#services{
+  min-height: 300px;
+  width: 100%;
+  background: #f4f4f4;
+  padding-top: 15px;
+  h6{
+    font-size: 26px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+    .service{
+      transition: .5s;
+      background: white;
+      padding:10px 50px 0 50px;
+      border-bottom: 5px solid #666;
+      margin-top: 20px;
+      margin-bottom: 25px;
+        .service_image{
+          border-radius: 100%;
+          width: 50px;
+          height: 50px;
+          background-color: #333;
+          margin: 10px auto;
+          padding: 6px;
+          transition: .5s;
+            i{
+              font-size: 1.4rem;
+              color: #fff;
+              margin-top: 8px;
+              transition: .5s;
+            }
+        }
+        .service_name{
+          text-transform: uppercase;
+          margin-top: 21px;
+          margin-bottom: 8px;
+          transition: .5s;
+            h5{
+              font-weight: 800;
+              font-size: 1.1rem;
+              font-family: 'Open Sans';
+            }
+        }
+        .service_desc{
+          margin-bottom: 16px;
+          transition: .5s;
+            p{
+              font-size: 1rem;
+              letter-spacing: 0.5px;
+              font-family: 'Open Sans';
+            }
+        }
+    }.service:hover{
+      transition: .5s;
+      background: #333;
+      border-bottom: 5px solid #e1e1e1;
+        .service_image{
+          transition: .5s;
+          background: white;
+            i{
+              color: #333;
+              transition: .5s;
+            }
+        }
+        .service_name,.service_desc{
+          color:white;
+          transition: .5s;
+        }
+    }
+}
+// services sectionun sonu
+
+// hire_me sectionun bashlagici
+#hire_me{
+  min-height: 250px;
+  background-image: url('../../images/hireme-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  text-align: center;
+  padding-bottom: 5rem;
+  margin-bottom: 0;
+  padding-top: 6rem;
+  margin-top: 0;
+  color: #fff;
+    .hear_title{
+      padding-bottom: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 2.0rem;
+      font-family: 'Open Sans';
+      transform: translateX(-1000px);
+      transition: 1s;
+    }
+    .hear_text{
+      margin-top: 50px;
+      margin-bottom: .5rem;
+      font-family: inherit;
+      font-weight: 500;
+      line-height: 1.1;
+      font-size: 21px;
+      color: inherit;
+      font-family: 'Open Sans';
+      transform: translateX(1190px);
+      transition: 1s;
+    }
+    .hear_btn{
+      margin-top: 70px;
+      width: 100px;
+      height: 50px;
+      background: transparent;
+      border-radius: 0px;
+      border: 1px solid white;
+      transition: 1s;
+      font-family: 'Open Sans';
+      transform: translateY(110px);
+    }button:hover{
+      background: white;
+      color:black;
+      transition: 1s;
+    }button:focus{
+        outline: none;
+      }
+}
+// hire_me sectionun sonu
+
+// works scetionun bashlangici
+#works{
+  min-height: 300px;
+  width: 100%;
+  background-color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  h6{
+    font-size: 26px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  ul{
+    border: none;
+    margin-top: 30px;
+      li{
+        list-style: none;
+        display: inline-block;
+          a{
+            text-decoration: none;
+            padding: 0 1.5rem;
+            font-size: 1rem;
+            border-radius: 15px;
+            border: 0;
+            color: #999 !important;
+            cursor: pointer;
+            display: inline-block;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Open Sans';
+          }
+      }
+  }
+  .items{
+    margin-top: 20px;
+    .item{
+      width: 390px;
+      height: 300px;
+      float: left;
+      transition: .5s;
+        a{
+          text-decoration: none;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+        }
+    }.item:hover{
+      opacity: 0.7;
+      transition: .5s;
+    }
+  }
+}
+// works sectionun sonu
+
+// news sectionun bashlangici
+#news{
+  min-height: 300px;
+  width: 100%;
+  background: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  h6{
+    font-size: 26px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  .new{
+    margin-top: 20px;
+
+    a{
+      text-decoration: none;
+        .new_img{
+          // width: 360px;
+          // height: 257px;
+          overflow: hidden;
+            img{
+              // width: 100%;
+              // height: 100%;
+              transition: all 0.7s ease;
+            }
+        }
+        .new_title{
+          font-size: 22px;
+          line-height: 24px;
+          font-weight: 600;
+          color: #333;
+          font-family: 'Open Sans';
+          margin-top: 15px;
+          margin-bottom: 10px;
+          transition: all 0.7s ease;
+        }
+        .new_text{
+          color: #777;
+          font-size: .9em;
+          font-weight: 400;
+          // color: #162221;
+          line-height: 25px;
+          letter-spacing: 1px;
+          word-spacing: 0.18em;
+          font-family: 'Open Sans';
+        }
+        button{
+          margin-top: 10px;
+          border-radius: 0px;
+          background-color: black;
+          color: white;
+          font-family: 'Open Sans';
+          padding: 10px 20px;
+          font-size: 16px;
+          transition: .5s;
+        }button:hover{
+          background: white;
+          color: black;
+          transition: .5s;
+          border:1px solid black;
+        }button:focus{
+            outline: none;
+          }
+    }
+  }.new:hover{
+    .new_img{
+      img{
+        transition: all 0.7s ease;
+        transform: scale(1.1);
+      }
+    }
+    .new_title{
+        color: #3eb991;
+        transition: all 0.7s ease;
+    }
+  }
+}
+// news sectionun sonu
+
+// contact sevtionun bashlangici
+#contact{
+  min-height: 300px;
+  width: 100%;
+  background: #333;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  h6{
+    font-size: 45px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 15px;
+    padding-top: 10px;
+    color: white;
+    line-height: 1.1;
+  }
+  p{
+    color: #f0f0f0;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-family: 'Open Sans';
+  }
+  .border_bottom{
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #bbb;
+    border-right: 2px solid #bbb;
+    color: #fff;
+    font-family: 'Open Sans';
+    padding:10px;
+    height: 35px !important;
+    margin: 20px 0;
+  }
+  textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #bbb;
+    border-right: 2px solid #bbb;
+    color: #fff;
+    height: 205px;
+    font-family: 'Open Sans';
+  }
+  button{
+    border-radius: 0px;
+    background: transparent;
+    border: 1px solid white;
+    font-family: 'Open Sans';
+    color:white;
+    margin-top: 10px;
+    transition: .2s;
+    padding: 10px 20px;
+    font-size: 16px;
+  }button:hover{
+    background: white;
+    color: #333;
+    transition: .2s;
+  }button:focus{
+      outline: none;
+    }
+}
+// contact sectionun sonu
+
+// location sectionun bashlangici
+#location{
+      background: #f4f4f4;
+      min-height:200px;
+      width: 100%;
+      padding: 35px 0;
+      p{
+        color: #666;
+        letter-spacing: 0.5px;
+        font-size: 1rem;
+        font-family: 'Open Sans';
+        margin-top: 15px;
+      }
+      ul{
+        padding: 0px;
+        margin-top: 15px;
+          li{
+            list-style: none;
+            font-size: 1.1rem;
+            font-family: 'Open Sans';
+            margin-bottom: 10px;
+            color: #555;
+            letter-spacing: 0.5px;
+              i{
+                padding-right: 10px;
+                color: #000;
+                font-size: 1.2rem;
+              }
+          }
+      }
+}
+// locatin sectionun sonu
+
+// footer sectionun bashlangici
+footer{
+  width: 100%;
+  color: #fff;
+  background: #111;
+  min-height: 60px;
+  // padding: 20px 0;
+    p{
+      font-size: 15px;;
+      font-family: 'Open Sans';
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+    }
+    ul{
+      padding: 0px;
+      margin-top: 20px;
+      text-align: right;
+        li{
+          list-style: none;
+          display: inline-block;
+          margin-left: 10px;
+            a{
+              color:white;
+              font-size: 15px;
+
+            }
+        }
+    }
+}
+// footer sectionun sonu
+
+//single_post sectionun bashlangici
+#single_post{
+  h4{
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 600;
+    // color: #333;
+    font-family: 'Open Sans';
+    margin-top: 80px;
+    margin-bottom: 35px;
+    // transition: all 0.7s ease;
+  }
+  p{
+      margin-top: 20px;
+       font-size: .9em;
+       font-weight: 400;
+       color: #162221;
+       line-height: 25px;
+       letter-spacing: 1px;
+       word-spacing: 0.18em;
+       font-family: 'Open Sans';
+  }
+
+  h6{
+    font-size: 26px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  // news_single sectionun bashlangici
+  #news_single{
+    min-height: 300px;
+    width: 100%;
+    background: white;
+    padding-top: 65px;
+    padding-bottom: 35px;
+    h6{
+      font-size: 26px;
+      line-height: 24px;
+      font-family: 'Open Sans';
+      margin-bottom: 10px;
+      padding-top: 10px;
+    }
+    .new_single{
+      margin-top: 20px;
+
+      a{
+        text-decoration: none;
+          .new_img_single{
+            // width: 360px;
+            // height: 257px;
+            overflow: hidden;
+              img{
+                // width: 100%;
+                // height: 100%;
+                transition: all 0.7s ease;
+              }
+          }
+          .new_title_single{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #333;
+            font-family: 'Open Sans';
+            margin-top: 15px;
+            margin-bottom: 10px;
+            transition: all 0.7s ease;
+          }
+          // .new_text{
+          //   color: #777;
+          //   font-size: .9em;
+          //   font-weight: 400;
+          //   // color: #162221;
+          //   line-height: 25px;
+          //   letter-spacing: 1px;
+          //   word-spacing: 0.18em;
+          //   font-family: 'Open Sans';
+          // }
+          // button{
+          //   margin-top: 10px;
+          //   border-radius: 0px;
+          //   background-color: black;
+          //   color: white;
+          //   font-family: 'Open Sans';
+          //   padding: 10px 20px;
+          //   font-size: 16px;
+          //   transition: .5s;
+          // }button:hover{
+          //   background: white;
+          //   color: black;
+          //   transition: .5s;
+          //   border:1px solid black;
+          // }button:focus{
+          //     outline: none;
+          //   }
+      }
+    }.new_single:hover{
+      // .new_img{
+      //   img{
+      //     transition: all 0.7s ease;
+      //     transform: scale(1.1);
+      //   }
+      // }
+      .new_title_single{
+          color: #3eb991;
+          transition: all 0.7s ease;
+      }
+    }
+  }
+  // news_single sectionun sonu
+}
+//single_post sectionun sonu
+
+
+
+@media screen and (max-width: 768px){
+  .move_top{
+    right: 15px;
+    bottom: 15px;
+  }
+  #navbar{
+    header{
+      #nese{
+        opacity: 0.8;
+        background: black;
+          ul{
+            li{
+              margin-bottom: 10px;
+                a{
+                  font-size: 18px;
+                }
+            }
+          }
+      }
+    }
+  }
+
+  #welcome{
+    .center{
+      left: 0px !important;
+    }
+  }
+  #about{
+    padding: 0px;
+    h6{
+      margin-top: 20px;
+    }
+    .about{
+      padding: 0px;
+      margin-bottom: 20px;
+    }
+  }
+  #skills{
+    padding: 20px;
+      .skil{
+        width: 100%;
+      }
+  }
+  #works{
+    .items{
+      .item{
+        width: 100%;
+        padding: 0 10px;
+      }
+    }
+  }
+  footer{
+    p{
+      text-align: center;
+    }
+    ul{
+      text-align: center;
+        li{
+          margin-right: 20px;
+        }
+    }
+  }
+  #single_post{
+    h4{
+      text-align: center;
+    }
+    img{
+      margin-bottom: 10px;
+    }
+    .a2a_kit{
+      margin-left: 80px;
+    }
+    p{
+      padding: 0 10px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 992px){
+  #works{
+    .items{
+      .item{
+        width: 50%;
+        // padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px){
+  #works{
+    .items{
+      .item{
+        width: 320px;
+        // padding: 0 10px;
+      }
+    }
+  }
+}
