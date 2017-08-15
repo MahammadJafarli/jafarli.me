@@ -856,9 +856,9 @@ footer .footer_bottom p{
     opacity: 0.8;
       top:68px;
     background: black; }
-  #navbar .logo img{
+  #navbar .navbar-header{
       -webkit-position:fixed;
-      top: 0px !important;
+      -webkit-top: 0px !important;
   }
     #navbar header #nese ul li {
       margin-bottom: 10px; }
