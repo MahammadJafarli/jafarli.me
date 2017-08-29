@@ -672,13 +672,17 @@ a {
   #location ul {
     padding: 0px;
     margin-top: 15px; }
-    #location ul li {
+#location ul li {
       list-style: none;
       font-size: 1.1rem;
       font-family: 'Open Sans';
       margin-bottom: 10px;
       color: #555;
       letter-spacing: 0.5px; }
+#location ul li a{
+    text-decoration: none;
+    color: #555;
+}
       #location ul li i {
         padding-right: 10px;
         color: #000;

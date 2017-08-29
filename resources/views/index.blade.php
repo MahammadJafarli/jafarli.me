@@ -390,8 +390,8 @@
             <div class="col-md-5 col-xs-12">
                 <ul>
                     <li><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $contact[0]->location }}</li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i> {{ $contact[0]->telephone }}</li>
-                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ $contact[0]->email }}</li>
+                    <li><a href="+994515501945"><i class="fa fa-phone" aria-hidden="true"></i> {{ $contact[0]->telephone }}</a></li>
+                    <li><a href="mailto:mahammad.c@code.edu.az"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ $contact[0]->email }}</a></li>
                 </ul>
             </div>
         </div>
