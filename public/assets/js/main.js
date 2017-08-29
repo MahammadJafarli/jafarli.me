@@ -104,3 +104,31 @@ $(document).ready(function() {
             });
         });
 
+//Contact Form Validator and Ajax Sender
+// $("#contactForm").validate({
+//     submitHandler: function(form) {
+//         $.ajax({
+//             type: "POST",
+//             url: "https://formspree.io/mahammad.c@code.edu.az",
+//             data: {
+//                 "name": $("#contactForm #name").val(),
+//                 "email": $("#contactForm #email").val(),
+//                 "subject": $("#contactForm #subject").val(),
+//                 "message": $("#contactForm #message").val()
+//             },
+//             dataType: "json",
+//             success: function (data) {
+//                 $("#contactSuccess").fadeIn(300);
+//                 $("#contactError").addClass("hidden");
+//
+//                 $("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
+//                     .val("")
+//                     .blur()
+//                     .closest(".control-group")
+//                     .removeClass("success")
+//                     .removeClass("error");
+//             }
+//
+//         });
+//     }
+// });

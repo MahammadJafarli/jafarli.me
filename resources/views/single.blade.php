@@ -23,42 +23,82 @@
 
 
 <!-- navbar sectionin bashlangici -->
-<section id="navbar" class="navbar-fixed-top"  style="background:black !important;height:57px;">
-    <!-- <div class="navbar_change" style="background:black !important"> -->
-    <div class="container">
-        <header role="banner" class="container navbar navbar-fixed-top navbar-invers">
-            <div class="navbar-header">
-                <button data-toggle="collapse-side" data-target="#nese" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
-                    <i class="fa fa-bars bar" aria-hidden="true"></i>
-                </button>
-                <div class="logo ">
-                    <a href="{{ url('/') }}"><img src="/images/logo.png" alt=""></a>
+
+<section id="navbar" class="navbar-fixed-top" style="background:black !important;height:70px;">>
+    <div class="navbar_change">
+        <div class="container">
+            <header role="banner" class="container navbar navbar-fixed-top navbar-invers">
+                <div class="navbar-header">
+                    <button data-toggle="collapse-side" data-target="#nese" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
+                        <i class="fa fa-bars bar" aria-hidden="true"></i>
+                    </button>
+                    <div class="logo ">
+                        <a href="{{ url('/') }}">
+                            <img src="/images/logo1.png" alt="">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div id="nese" class="side-collapse in">
-                <nav role="navigation" class="navbar-collapse">
-                    <ul class="nav navbar-nav pull-right visible-md visible-lg ">
-                        <li><a href="index.html"  data-scroll-nav="0">HOME<div class="nav-border"></div></a></li>
-                        <li><a href="index.html"  data-scroll-nav="1">ABOUT <div class="nav-border"></div></a></li>
-                        <li><a href="index.html" data-scroll-nav="2">SERVICES <div class="nav-border"></div></a></li>
-                        <li><a href="index.html" data-scroll-nav="3">PORTFOLIO <div class="nav-border"></div></a></li>
-                        <li><a href="index.html" data-scroll-nav="4">NEWS <div class="nav-border"></div></a></li>
-                        <li><a href="index.html" data-scroll-nav="5">CONTACT <div class="nav-border"></div></a></li>
-                    </ul>
-                    <ul class="nav navbar-nav visible-xs">
-                        <li><a href="index.html" data-scroll-nav="0">HOME</a></li>
-                        <li><a href="index.html" data-scroll-nav="1">ABOUT</a></li>
-                        <li><a href="index.html" data-scroll-nav="2">SERVICES</a></li>
-                        <li><a href="index.html" data-scroll-nav="3">PORTFOLIO</a></li>
-                        <li><a href="index.html" data-scroll-nav="4">NEWS</a></li>
-                        <li><a href="index.html" data-scroll-nav="5">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                <div id="nese" class="side-collapse in">
+                    <nav role="navigation" class="navbar-collapse">
+                        <ul class="nav navbar-nav pull-right visible-md visible-lg ">
+                            <li><a  data-scroll-nav="0">HOME<div class="nav-border"></div></a></li>
+                            <li><a  data-scroll-nav="1">ABOUT <div class="nav-border"></div></a></li>
+                            <li><a  data-scroll-nav="2">SERVICES <div class="nav-border"></div></a></li>
+                            <li><a  data-scroll-nav="3">PORTFOLIO <div class="nav-border"></div></a></li>
+                            <li><a  data-scroll-nav="4">NEWS <div class="nav-border"></div></a></li>
+                            <li><a data-scroll-nav="5">CONTACT <div class="nav-border"></div></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav visible-xs">
+                            <li><a  data-scroll-nav="0">HOME</a></li>
+                            <li><a  data-scroll-nav="1">ABOUT</a></li>
+                            <li><a  data-scroll-nav="2">SERVICES</a></li>
+                            <li><a  data-scroll-nav="3">PORTFOLIO</a></li>
+                            <li><a  data-scroll-nav="4">NEWS</a></li>
+                            <li><a data-scroll-nav="5">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
     </div>
-    <!-- </div> -->
 </section>
+
+{{--<section id="navbar" class="navbar-fixed-top"  style="background:black !important;height:57px;">--}}
+    {{--<!-- <div class="navbar_change" style="background:black !important"> -->--}}
+    {{--<div class="container">--}}
+        {{--<header role="banner" class="container navbar navbar-fixed-top navbar-invers">--}}
+            {{--<div class="navbar-header">--}}
+                {{--<button data-toggle="collapse-side" data-target="#nese" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">--}}
+                    {{--<i class="fa fa-bars bar" aria-hidden="true"></i>--}}
+                {{--</button>--}}
+                {{--<div class="logo ">--}}
+                    {{--<a href="{{ url('/') }}"><img src="/images/logo1.png" alt=""></a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div id="nese" class="side-collapse in">--}}
+                {{--<nav role="navigation" class="navbar-collapse">--}}
+                    {{--<ul class="nav navbar-nav pull-right visible-md visible-lg ">--}}
+                        {{--<li><a href="index.html"  data-scroll-nav="0">HOME<div class="nav-border"></div></a></li>--}}
+                        {{--<li><a href="index.html"  data-scroll-nav="1">ABOUT <div class="nav-border"></div></a></li>--}}
+                        {{--<li><a href="index.html" data-scroll-nav="2">SERVICES <div class="nav-border"></div></a></li>--}}
+                        {{--<li><a href="index.html" data-scroll-nav="3">PORTFOLIO <div class="nav-border"></div></a></li>--}}
+                        {{--<li><a href="index.html" data-scroll-nav="4">NEWS <div class="nav-border"></div></a></li>--}}
+                        {{--<li><a href="index.html" data-scroll-nav="5">CONTACT <div class="nav-border"></div></a></li>--}}
+                    {{--</ul>--}}
+                    {{--<ul class="nav navbar-nav visible-xs">--}}
+                        {{--<li><a href="index.html" data-scroll-nav="0">HOME</a></li>--}}
+                        {{--<li><a href="index.html" data-scroll-nav="1">ABOUT</a></li>--}}
+                        {{--<li><a href="index.html" data-scroll-nav="2">SERVICES</a></li>--}}
+                        {{--<li><a href="index.html" data-scroll-nav="3">PORTFOLIO</a></li>--}}
+                        {{--<li><a href="index.html" data-scroll-nav="4">NEWS</a></li>--}}
+                        {{--<li><a href="index.html" data-scroll-nav="5">CONTACT</a></li>--}}
+                    {{--</ul>--}}
+                {{--</nav>--}}
+            {{--</div>--}}
+        {{--</header>--}}
+    {{--</div>--}}
+    {{--<!-- </div> -->--}}
+{{--</section>--}}
 <!-- navbar sectionun sonu -->
 
 <!-- single_post sectionun bashlangici -->
@@ -86,30 +126,14 @@
                                 </p>
                             </div>
                         </div>
-                        {{--<div class="col-md-4">--}}
-                            {{--<div class="row text-center">--}}
-                                {{--<h6>SHARE</h6>--}}
-                                {{--<div class="border_bottom"></div>--}}
-                            {{--</div>--}}
-                            {{--<!-- AddToAny BEGIN -->--}}
-                            {{--<div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="margin-top:10px;">--}}
-                                {{--<!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->--}}
-                                {{--<a class="a2a_button_facebook"></a>--}}
-                                {{--<a class="a2a_button_twitter"></a>--}}
-                                {{--<a class="a2a_button_google_plus"></a>--}}
-                                {{--<a class="a2a_button_linkedin"></a>--}}
-                                {{--<a class="a2a_button_google_gmail"></a>--}}
-                                {{--<a class="a2a_button_facebook_messenger"></a>--}}
-                            {{--</div>--}}
-                            {{--<script async src="https://static.addtoany.com/menu/page.js"></script>--}}
-                            {{--<!-- AddToAny END -->--}}
-                        {{--</div>--}}
+
                     </div>
 
                     <p>{!!  $post->post_text !!}</p>
 
-
+                    <div class="addthis_inline_share_toolbox" style="margin-top: 20px;"></div>
                 </div>
+
             </div>
             <div class="col-md-3">
                 <!-- news sectioniun bashlangici -->
@@ -121,13 +145,15 @@
                     </div>
                     <div class="row">
                         @foreach($posts as $posts)
-                            <div class="col-md-12 col-xs-12 col-sm-6 col-lg-12">
+                            <div class="col-md-12 col-xs-12 col-sm-6 col-lg-12" style="margin-top:0px;">
                                 <div class="new_single">
                                     <a href="{{ $post->id }}">
-                                        <div class="new_img_single col-md-12 col-lg-12">
-                                            <img src="{{ '/images/'.$posts->post_image }}" class="img-responsive" alt="">
+                                        <div class="new_img_single col-md-6 col-lg-6">
+                                            <img src="{{ '/images/'.$posts->post_image }}" class="" alt="">
                                         </div>
-                                        <h5 class="new_title_single col-md-12 col-lg-12">{{ $posts->post_title }}</h5>
+                                        <div class="col-md-6 col-lg-6" style="padding-left: 0px;">
+                                            <h5 class="new_title_single" style="margin-top: 0px;">{{ $posts->post_title }}</h5>
+                                        </div>
                                         <!-- <p class="new_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p> -->
                                         <!-- <a href="#">
                                           <button type="button" class="btn pull-right" name="button">READ MORE</button>
@@ -153,9 +179,10 @@
 <footer>
     <div class="text-center">
         <div class="footer_top">
-            <a href="#">
-                <i class="fa fa-code" aria-hidden="true"></i>
-                JAFARLİ
+            <a href="{{ url('/')}}">
+                <div class="logo2 text-center">
+                    <img src="/images/logo2.png" alt="">
+                </div>
             </a>
             <ul>
                 @foreach($social as $social)
@@ -172,6 +199,8 @@
 
 <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.0.js"></script>
 <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-599d34b6beefc187"></script>
+
 <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
 <script type="text/javascript">
     $(document).ready(function() {

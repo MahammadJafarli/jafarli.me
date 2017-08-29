@@ -17,8 +17,8 @@ class Controller extends BaseController
     public function __construct()
     {
         // Defaults
-        MetaTag::set('description', 'Web developer');
-        MetaTag::set('title', 'Jafarli');
-        MetaTag::set('image', asset('images/logo2.png'));
+        MetaTag::set('description', 'Full Stack Web Developer');
+        MetaTag::set('title', 'Mahammad Jafarli');
+        MetaTag::set('image', asset('images/jafarli_screen.png'));
     }
 }

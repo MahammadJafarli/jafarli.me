@@ -804,7 +804,7 @@ footer .footer_bottom p{
   min-height: 300px;
   width: 100%;
   background: white;
-  padding-top: 65px;
+  padding-top: 120px;
   padding-bottom: 35px; }
   #single_post #news_single h6 {
     font-size: 26px;
@@ -817,8 +817,12 @@ footer .footer_bottom p{
     #single_post #news_single .new_single a {
       text-decoration: none; }
       #single_post #news_single .new_single a .new_img_single {
+          width: 130px;
+          height:90px;
         overflow: hidden; }
         #single_post #news_single .new_single a .new_img_single img {
+            width: 100%;
+            height:100%;
           transition: all 0.7s ease; }
       #single_post #news_single .new_single a .new_title_single {
         font-size: 18px;
@@ -826,6 +830,8 @@ footer .footer_bottom p{
         font-weight: 600;
         color: #333;
         font-family: 'Open Sans';
+          margin-top: 0px;
+          padding-left: 0px;
         margin-top: 15px;
         margin-bottom: 10px;
         transition: all 0.7s ease; }
@@ -857,8 +863,9 @@ footer .footer_bottom p{
       top:68px;
     background: black; }
   #navbar .navbar-header{
-      -webkit-position:fixed;
-      -webkit-top: 0px !important;
+    position: fixed;
+    top: 7px !important;
+    /*left: 0px;*/
   }
     #navbar header #nese ul li {
       margin-bottom: 10px; }
@@ -891,7 +898,9 @@ footer .footer_bottom p{
     margin-bottom: 10px;
     border-bottom: 2px solid black;
   }
-
+  #news .new a .new_img{
+    width: 100%;
+  }
   footer p {
     text-align: center; }
   footer ul {

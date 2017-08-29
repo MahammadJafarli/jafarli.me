@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/particles/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+    <link rel="shortcut icon" href="images/ikon.png" type="image/png" />
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.0.js"></script>
 </head>
 <body>
@@ -359,17 +359,17 @@
         <form action="https://formspree.io/mahammad.c@code.edu.az" method="POST">
             <div class="row">
                     <div class="col-md-6 col-xs-12 col-sm-6 col-lg-6">
-                        <input type="text"  name="name" value="" placeholder="Your Name">
+                        <input type="text"  name="name" id="name" value="" placeholder="Your Name">
                         {{--<p>{{$errors->first('name')}}</p>--}}
-                        <input type="email"  name="email" value="" placeholder="Email">
-                        <input type="text"  name="subject" value="" placeholder="Subject">
+                        <input type="email"  name="email" id="email" value="" placeholder="Email">
+                        <input type="text"  name="subject" id="subject" value="" placeholder="Subject">
                     </div>
                     <div class="col-md-6 col-xs-12 col-sm-6 col-lg-6">
-                        <textarea name="message" placeholder="Your Message" rows="7" cols="80"></textarea>
+                        <textarea name="message" id="message" placeholder="Your Message" rows="7" cols="80"></textarea>
                     </div>
             </div>
             <div class="row text-center">
-                <button type="submit" class="btn" name="button">Send Message</button>
+                <button type="submit" class="btn form-send" name="button">Send Message</button>
             </div>
         </form>
     </div>

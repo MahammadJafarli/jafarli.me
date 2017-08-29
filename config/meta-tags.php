@@ -42,7 +42,7 @@ return array(
 
     'open_graph' => [
         'site_name' => 'jafarli.me',
-        'type' => 'web developer'
+        'type' => 'full stack web developer'
     ],
 
     /*
@@ -54,8 +54,8 @@ return array(
 
     'twitter' => [
         'card' => 'summary',
-        'creator' => '@mysite',
-        'site' => '@mysite'
+        'creator' => 'Mahammad Jafarli',
+        'site' => 'jafarli.me'
     ],
 
     /*
