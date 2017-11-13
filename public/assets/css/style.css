@@ -1,27 +1,5 @@
 @font-face {
   font-family: 'Open Sans', sans-serif; }
-
-@media screen and (max-width: 768px) {
-  .side-collapse-container {
-    width: 100%;
-    position: relative;
-    left: 0;
-    transition: left .4s; }
-
-  .side-collapse-container.out {
-    left: 200px; }
-
-  .side-collapse {
-    top: 50px;
-    bottom: 0;
-    left: 0;
-    width: 200px;
-    position: fixed;
-    overflow: hidden;
-    transition: width .4s; }
-
-  .side-collapse.in {
-    width: 0; } }
 .border_bottom {
   width: 70px;
   height: 2px;
@@ -45,69 +23,66 @@ a {
       color: white;
       font-size: 20px;
       margin-top: 10px; }
-
 #navbar {
-  background-color: rgba(255, 255, 255, 0); }
-  #navbar .navbar_change {
-    z-index: 1; }
-  #navbar header {
-    padding-top: 8px; }
-    #navbar header .navbar-header button {
-      padding-top: 2px; }
-      #navbar header .navbar-header button .bar {
-        color: white;
-        font-size: 23px; }
-    #navbar header .navbar-header button:focus {
-      outline: none; }
-    #navbar header .logo {
-      /*margin-top: 10px;*/
-      display: inline-block;
-      width: 190px;
-      height:50px;
-    }
-#navbar header .logo img{
-  width: 100%;
-  height: 100%;
+  width: 100%; }
+#navbar .navbar {
+  width: 100% !important;
+  background: transparent;
+  border: 0px;
+  height: 90px; }
+#navbar .navbar .navbar-header img {
+  width: 200px; }
+#navbar .navbar .navbar-header button {
+  border: 1px solid white;
+  margin-top: 25px;
+  color: white;}
+#navbar .navbar .navbar-collapse{
+  border: 0px;
 }
-#navbar header .navbar-header .logo a{
-  letter-spacing: 5.8px;
-  text-decoration: none;
-  font-size: 25px;
-  color:white;
-  font-family: 'Open Sans';
-}
-#navbar header .navbar-header .logo a span{
-  color: #2196f3;
-}
-#navbar header .navbar-header   i{
-  color: #2196f3;
-  font-size: 35px;
-  margin-right: 10px;
-}
-    #navbar header #nese {
-      opacity: 1; }
-#navbar header #nese nav ul {
-  margin-top: 5px;
-}
-      #navbar header #nese nav ul li a {
-        color: white;
-        font-weight: 500;
-        letter-spacing: 0.6px;
-        font-family: 'Open Sans';
-        cursor: pointer; }
-        #navbar header #nese nav ul li a .nav-border {
-          margin-top: 5px;
-          height: 2px;
-          background: #78beff;
-          width: 0px;
-          transition: .7s; }
-      #navbar header #nese nav ul li a:hover {
-        background-color: transparent; }
-        #navbar header #nese nav ul li a:hover .nav-border {
-          width: 100%;
-          transition: .7s; }
-      #navbar header #nese nav ul li a:focus {
-        background-color: transparent; }
+#navbar .navbar .nav {
+  padding-top: 20px !important; }
+#navbar .navbar .navbar-collapse .nav li a {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  cursor: pointer;
+  font-family: 'Open Sans';}
+@media screen and (max-width: 768px) {
+  #navbar .navbar .navbar-collapse {
+    background: black;
+  margin-top:82px;}
+  #navbar .navbar .navbar-header{
+    width: 100%;
+  } }
+/*#navbar .navbar .collapse .nav li a:hover {*/
+  /*background: none; }*/
+/*#navbar .navbar .collapse .nav li a:focus {*/
+  /*background: transparent; }*/
+/*#navbar .navbar .collapse .nav li .dropdown {*/
+  /*margin-top: 7px; }*/
+/*#navbar .navbar .collapse .nav li .dropdown button {*/
+  /*background: transparent;*/
+  /*border: 1px solid white;*/
+  /*border-radius: 0px;*/
+  /*color: white;*/
+  /*font-size: 18px;*/
+  /*letter-spacing: 3px;*/
+  /*font-weight: 200;*/
+  /*font-family: 'Din';*/
+  /*padding-bottom: 4px; }*/
+/*#navbar .navbar .collapse .nav li .dropdown ul {*/
+  /*width: 100px;*/
+  /*min-height: 30px; }*/
+/*#navbar .navbar .collapse .nav li .dropdown ul li a {*/
+  /*color: black; }*/
+/*@media screen and (max-width: 768px) {*/
+  /*#navbar .navbar .collapse {*/
+    /*background: black; }*/
+  /*#navbar .navbar .dropdown {*/
+    /*margin-left: 12px; }*/
+  /*#navbar .navbar .dropdown ul li a {*/
+    /*color: white !important; } }*/
 
 #welcome {
   background-image: url("../../images/pc5.jpg");
@@ -269,6 +244,7 @@ a {
       transform: tranlateY(1000px);
   }
   #services .service {
+    height: 230px !important;
     transition: .5s;
     background: white;
     padding: 10px 50px 0 50px;

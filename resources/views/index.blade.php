@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    {{--<title>JAFARLİ</title>--}}
+
     <title>{{ MetaTag::get('title') }}</title>
 
     {!! MetaTag::tag('description') !!}
@@ -21,13 +21,13 @@
     <meta name="googlebot" content="index,follow,all">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/particles/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="shortcut icon" href="images/ikon.png" type="image/png" />
-    <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/vendors/bootstrap/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css') }}" media="screen" title="no title">
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css/particles/css/style.css') }}">
+    <link href="{{ url('https://fonts.googleapis.com/css?family=Open+Sans') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url('images/ikon.png') }}" type="image/png" />
+
 </head>
 <body>
 
@@ -38,44 +38,34 @@
 </a>
 
 
-<!-- navbar sectionin bashlangici -->
+<!-- navbar sectionun bashlangici -->
 <section id="navbar">
-    <div class="navbar_change">
-        <div class="container">
-            <header role="banner" class="container navbar navbar-fixed-top navbar-invers">
-                <div class="navbar-header">
-                    <button data-toggle="collapse-side" data-target="#nese" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
-                        <i class="fa fa-bars bar" aria-hidden="true"></i>
-                    </button>
-                    <div class="logo ">
-                        <a href="{{ url('/') }}">
-                            <img src="images/logo1.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div id="nese" class="side-collapse in">
-                    <nav role="navigation" class="navbar-collapse">
-                        <ul class="nav navbar-nav pull-right visible-md visible-lg ">
-                            <li><a  data-scroll-nav="0">HOME<div class="nav-border"></div></a></li>
-                            <li><a  data-scroll-nav="1">ABOUT <div class="nav-border"></div></a></li>
-                            <li><a  data-scroll-nav="2">SERVICES <div class="nav-border"></div></a></li>
-                            <li><a  data-scroll-nav="3">PORTFOLIO <div class="nav-border"></div></a></li>
-                            <li><a  data-scroll-nav="4">NEWS <div class="nav-border"></div></a></li>
-                            <li><a data-scroll-nav="5">CONTACT <div class="nav-border"></div></a></li>
-                        </ul>
-                        <ul class="nav navbar-nav visible-xs">
-                            <li><a  data-scroll-nav="0">HOME</a></li>
-                            <li><a  data-scroll-nav="1">ABOUT</a></li>
-                            <li><a  data-scroll-nav="2">SERVICES</a></li>
-                            <li><a  data-scroll-nav="3">PORTFOLIO</a></li>
-                            <li><a  data-scroll-nav="4">NEWS</a></li>
-                            <li><a data-scroll-nav="5">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="{{ url('/images/logo1.png') }}" alt=""></a>
         </div>
-    </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a data-scroll-nav="0">Home <div class="nav-border"></div></a></li>
+                <li><a data-scroll-nav="1">About <div class="nav-border"></div></a></li>
+                <li><a data-scroll-nav="2">Services <div class="nav-border"></div></a></li>
+                <li><a data-scroll-nav="3">Portfolio <div class="nav-border"></div></a></li>
+                <li><a data-scroll-nav="4">Blog <div class="nav-border"></div></a></li>
+                <li><a data-scroll-nav="5">Contact <div class="nav-border"></div></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 </section>
 <!-- navbar sectionun sonu -->
 
@@ -98,22 +88,22 @@
 <section id="about" data-scroll-index="1">
     <div class="container">
         <div class="row text-center">
-            <h6>About</h6>
+            <h6>About Me</h6>
             <div class="border_bottom"></div>
         </div>
         <div class="row">
             <div class="col-md-5 col-xs-12 col-sm-5 col-lg-5" style="margin-top:30px;">
                 <div class="row">
                         <div class="about">
-                            <img src="{{ '/images/'.$about[1]->about_image }}" alt="" class="img-responsive about_img img-sircle "><br>
-                            <h4 class="about_name ">{{ $about[1]->about_name }}</h4>
-                            <p class="about_position ">{{ $about[1]->about_position }}</p>
+                            <img src="{{ '/images/'.$about[0]->about_image }}" alt="" class="img-responsive about_img img-sircle "><br>
+                            <h4 class="about_name ">{{ $about[0]->about_name }}</h4>
+                            <p class="about_position ">{{ $about[0]->about_position }}</p>
                         </div>
                 </div>
             </div>
             <div class="col-md-7 col-xs-12 col-sm-7 col-lg-7" style="margin-top:30px;">
-                <h6 class="about_title">{{ $about[1]->about_title }}</h6>
-                <p class="about_text">{{$about[1]->about_text }}</p>
+                <h6 class="about_title">{{ $about[0]->about_title }}</h6>
+                <p class="about_text">{{$about[0]->about_text }}</p>
                 <button type="button" class="btn" data-scroll-nav="5" name="button">Contact Me</button>
                 <a href="{{url('/downloadCV')}}">
                     <button type="button" class="btn" name="button">Download My CV</button>
@@ -135,15 +125,15 @@
             <input type="hidden" id="skills" value="">
             @foreach($skill as $skill)
 
-                <script>
-                    if({{$skill->id}} == 1){
-                        var value='';
-                        $('#skills').attr('value',value+'.{{$skill->class}} ');
-                    }else{
-                        var value = $('#skills').attr('value');
-                        $('#skills').attr('value',value+'.{{$skill->class}} ');
-                    }
-                </script>
+                {{--<script>--}}
+                    {{--if({{$skill->id}} == 1){--}}
+                        {{--var value='';--}}
+                        {{--$('#skills').attr('value',value+'.{{$skill->class}} ');--}}
+                    {{--}else{--}}
+                        {{--var value = $('#skills').attr('value');--}}
+                        {{--$('#skills').attr('value',value+'.{{$skill->class}} ');--}}
+                    {{--}--}}
+                {{--</script>--}}
 
                 <div class="skil">
                     <p>{{ $skill->skill_name }} - {{ $skill->skill_percent }}% {{ $skill->skill_desc }} </p>
@@ -295,8 +285,8 @@
 <section id="hire_me">
     <div class="container">
         <div class="row" style="overflow:hidden">
-            <h2 class="hear_title">DO YOU HAVE AN INTERESTING PROJECT?</h2>
-            <h4 class="hear_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit lorem in ipsum efficitur laoreet. Suspendisse malesuada mi ligula, sit amet tristique ex lacinia vel.</h4>
+            <h2 class="hear_title">Do you have an interesting project?</h2>
+            <h4 class="hear_text">Do you have a business or any kind of idea? Please, don’t forget about importance of webpages. User friendly and clearly coded webpage makes your business better than others, because customers will see your face in your webpage. That is why just connect me and I will give you excellence coded webpage.</h4>
             <button type="button" data-scroll-nav="4" class="btn hear_btn" name="button">HIRE ME !</button>
         </div>
     </div>
@@ -450,11 +440,12 @@
     });
 </script>
 
-
-</body>
-</html>
+<script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.0.js"></script>
 <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script type="text/javascript" src="assets/js/pace.js"></script>
 <script type="text/javascript" src="assets/js/preloader.js"></script>
 <script type="text/javascript" src="assets/js/scrollIt.js"></script>
+</body>
+</html>
+

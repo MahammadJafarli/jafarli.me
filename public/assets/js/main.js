@@ -1,8 +1,6 @@
 $(document).ready(function(){
 	$(window).scroll(function(event) {
 		var animate= $(window).scrollTop();
-		console.log(animate);
-
 		if(animate>80){
 			$("#about .about").css({
                 transform: 'translateX(0px)',
@@ -23,17 +21,12 @@ $(document).ready(function(){
 		}
 
 		if (animate>220) {
-			$(".navbar_change").css({
-        background:'black',
-        width:'100%',
-        height:'70px',
-        position:'fixed',
-        top:'0px',
-
+			$(".navbar").css({
+                background:'black',
 			});
 		}
 		if (animate==0) {
-			$(".navbar_change").css({
+			$(".navbar").css({
 				background:'transparent',
 			});
 			$(".move_top").css({
@@ -51,14 +44,14 @@ $(document).ready(function(){
         var skills = skillsInput.split(' ');
 
         if (animate>660){
-			for(i in skills){
+            for(i in skills){
                 var percent = $(skills[i]).attr('aria-valuenow');
-				$(skills[i]).css({
+                $(skills[i]).css({
                     width:percent+'%',
                     transition:'.5s',
                 });
-			}
-		}
+            }
+        }
 		if(animate>2000){
 			$(".hear_title").css({
 				transform: 'translateX(0px)',

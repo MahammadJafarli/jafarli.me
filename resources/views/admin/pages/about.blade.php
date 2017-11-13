@@ -27,6 +27,11 @@
                     <a href="/about/{{ $about->id }}/aboutEdit">
                         <button type="button" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                     </a>
+                    <form action="about/{{ $about->id }}/delete" method="post">
+                        {{method_field('DELETE')}}
+                        {{csrf_field()}}
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </form>
                 </td>
             </tr>
         @endforeach

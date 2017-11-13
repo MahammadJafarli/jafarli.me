@@ -88,7 +88,7 @@ class AboutController extends Controller
     public function edit(About $about)
     {
 
-        $data = About::findOrFail($about);
+        $data = About::find($about);
 
         return view("admin.pages.aboutEdit", compact('about','data'));
 
@@ -104,7 +104,7 @@ class AboutController extends Controller
     public function update(AboutRequest $request, $about)
     {
 
-        $about = About::findOrFail($about);
+        $about = About::find($about);
 
         $about->about_title = $request->title;
 
@@ -138,6 +138,10 @@ class AboutController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $about = About::find($id);
+
+        $about -> delete();
+
+        return redirect('/about');
     }
 }

@@ -23,82 +23,34 @@
 
 
 <!-- navbar sectionin bashlangici -->
-
-<section id="navbar" class="navbar-fixed-top" style="background:black !important;height:70px;">>
-    <div class="navbar_change">
+<section id="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: black;">
         <div class="container">
-            <header role="banner" class="container navbar navbar-fixed-top navbar-invers">
-                <div class="navbar-header">
-                    <button data-toggle="collapse-side" data-target="#nese" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
-                        <i class="fa fa-bars bar" aria-hidden="true"></i>
-                    </button>
-                    <div class="logo ">
-                        <a href="{{ url('/') }}">
-                            <img src="/images/logo1.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div id="nese" class="side-collapse in">
-                    <nav role="navigation" class="navbar-collapse">
-                        <ul class="nav navbar-nav pull-right visible-md visible-lg ">
-                            <li><a  data-scroll-nav="0">HOME<div class="nav-border"></div></a></li>
-                            <li><a  data-scroll-nav="1">ABOUT <div class="nav-border"></div></a></li>
-                            <li><a  data-scroll-nav="2">SERVICES <div class="nav-border"></div></a></li>
-                            <li><a  data-scroll-nav="3">PORTFOLIO <div class="nav-border"></div></a></li>
-                            <li><a  data-scroll-nav="4">NEWS <div class="nav-border"></div></a></li>
-                            <li><a data-scroll-nav="5">CONTACT <div class="nav-border"></div></a></li>
-                        </ul>
-                        <ul class="nav navbar-nav visible-xs">
-                            <li><a  data-scroll-nav="0">HOME</a></li>
-                            <li><a  data-scroll-nav="1">ABOUT</a></li>
-                            <li><a  data-scroll-nav="2">SERVICES</a></li>
-                            <li><a  data-scroll-nav="3">PORTFOLIO</a></li>
-                            <li><a  data-scroll-nav="4">NEWS</a></li>
-                            <li><a data-scroll-nav="5">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        </div>
-    </div>
-</section>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="{{ url('/images/logo1.png') }}" alt=""></a>
+            </div>
 
-{{--<section id="navbar" class="navbar-fixed-top"  style="background:black !important;height:57px;">--}}
-    {{--<!-- <div class="navbar_change" style="background:black !important"> -->--}}
-    {{--<div class="container">--}}
-        {{--<header role="banner" class="container navbar navbar-fixed-top navbar-invers">--}}
-            {{--<div class="navbar-header">--}}
-                {{--<button data-toggle="collapse-side" data-target="#nese" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">--}}
-                    {{--<i class="fa fa-bars bar" aria-hidden="true"></i>--}}
-                {{--</button>--}}
-                {{--<div class="logo ">--}}
-                    {{--<a href="{{ url('/') }}"><img src="/images/logo1.png" alt=""></a>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div id="nese" class="side-collapse in">--}}
-                {{--<nav role="navigation" class="navbar-collapse">--}}
-                    {{--<ul class="nav navbar-nav pull-right visible-md visible-lg ">--}}
-                        {{--<li><a href="index.html"  data-scroll-nav="0">HOME<div class="nav-border"></div></a></li>--}}
-                        {{--<li><a href="index.html"  data-scroll-nav="1">ABOUT <div class="nav-border"></div></a></li>--}}
-                        {{--<li><a href="index.html" data-scroll-nav="2">SERVICES <div class="nav-border"></div></a></li>--}}
-                        {{--<li><a href="index.html" data-scroll-nav="3">PORTFOLIO <div class="nav-border"></div></a></li>--}}
-                        {{--<li><a href="index.html" data-scroll-nav="4">NEWS <div class="nav-border"></div></a></li>--}}
-                        {{--<li><a href="index.html" data-scroll-nav="5">CONTACT <div class="nav-border"></div></a></li>--}}
-                    {{--</ul>--}}
-                    {{--<ul class="nav navbar-nav visible-xs">--}}
-                        {{--<li><a href="index.html" data-scroll-nav="0">HOME</a></li>--}}
-                        {{--<li><a href="index.html" data-scroll-nav="1">ABOUT</a></li>--}}
-                        {{--<li><a href="index.html" data-scroll-nav="2">SERVICES</a></li>--}}
-                        {{--<li><a href="index.html" data-scroll-nav="3">PORTFOLIO</a></li>--}}
-                        {{--<li><a href="index.html" data-scroll-nav="4">NEWS</a></li>--}}
-                        {{--<li><a href="index.html" data-scroll-nav="5">CONTACT</a></li>--}}
-                    {{--</ul>--}}
-                {{--</nav>--}}
-            {{--</div>--}}
-        {{--</header>--}}
-    {{--</div>--}}
-    {{--<!-- </div> -->--}}
-{{--</section>--}}
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/#welcome">Home <div class="nav-border"></div></a></li>
+                    <li><a href="/#about">About <div class="nav-border"></div></a></li>
+                    <li><a href="/#services">Services <div class="nav-border"></div></a></li>
+                    <li><a href="/#works">Portfolio <div class="nav-border"></div></a></li>
+                    <li><a href="/#news">Blog <div class="nav-border"></div></a></li>
+                    <li><a href="/#contact">Contact <div class="nav-border"></div></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</section>
 <!-- navbar sectionun sonu -->
 
 <!-- single_post sectionun bashlangici -->

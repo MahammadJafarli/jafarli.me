@@ -43,6 +43,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::patch('/about/{about}', "AboutController@update");
 
+    Route::delete('/about/{about}/delete', "AboutController@destroy");
+
     Route::get('/services', "ServicesController@index");
 
     Route::get('/serviceCreate', "ServicesController@create");
