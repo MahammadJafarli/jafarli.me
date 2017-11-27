@@ -48,7 +48,7 @@ class IndexController extends Controller
 
 
 
-        return view('index', compact('about','skill','service','post','contact','social','category','portfolio'));
+        return view('index2', compact('about','skill','service','post','contact','social','category','portfolio'));
 
     }
 

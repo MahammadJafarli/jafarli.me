@@ -165,7 +165,6 @@
                     <div class="service text-center">
                         <div class="service_image ">
                             {!!  $service->service_icon !!}
-
                         </div>
                         <div class="service_name">
                             <b><h5>{{ $service->serrvice_name }}</h5></b>
