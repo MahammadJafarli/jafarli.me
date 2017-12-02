@@ -160,7 +160,7 @@
                             @foreach($skill as $skill)
                             <div class="item">
                                 <h6>{{ $skill->skill_name }}</h6>
-                                <div class="skills-progress"><span data-value='{{ $skill->skill_percent }}'></span></div>
+                                <div class="skills-progress"><span data-value='{{ $skill->skill_percent }}%'></span></div>
                             </div>
                             @endforeach
                         </div>
@@ -230,6 +230,7 @@
                             <span class="x"></span>
                             <div class="v-middle">
                                 <h5>{{ $portfolio->portfolio_name }}</h5>
+                                <h5><i>{{ $portfolio->description }}</i></h5>
                             </div>
                         </div>
                         </a>
@@ -433,7 +434,7 @@
                     <!-- form -->
                     <div class="main-form">
                         <!-- contact form -->
-                        <form class='form' id='contact-form' action="https://formspree.io/mahammad.c@code.edu.az" method="POST" role='form'>
+                        <form class='form'  action="https://formspree.io/mahammad.c@code.edu.az" method="POST" role='form'>
                             <input type='hidden' name='form-name' value='contact-form' />
                             <div class="messages"></div>
 
