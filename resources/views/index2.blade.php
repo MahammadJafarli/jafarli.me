@@ -39,11 +39,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CMontserrat:200,300,400,500,600,700,900" rel="stylesheet">
 
     <!-- Font awesome Core CSS -->
-    <link rel='stylesheet' href='http://d33wubrfki0l68.cloudfront.net/bundles/79c6bed9d10f2a0c766541ee39378dd7575a9591.css'/>
-
+    <link rel="stylesheet" href="{{ url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css') }}" media="screen" title="no title">
 
     <!-- bootstrap css -->
-    <link rel='stylesheet' href='http://d33wubrfki0l68.cloudfront.net/css/35f18eff48ee20bf8cf89df2c684ec7f2bbb978c/css/bootstrap.min.css'/>
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/vendors/bootstrap/css/bootstrap.css') }}">
 
     <!-- magnific-popup CSS -->
     <link rel='stylesheet' href='http://d33wubrfki0l68.cloudfront.net/css/f7c33166984ffaa7725eb2f045126d33c71e651b/css/magnific-popup.css'/>
@@ -243,6 +242,18 @@
     </section>
     <!--====== End Portfolio ======-->
 
+    <!-- hire_me sectionun bashlnagici -->
+    <section id="hire_me">
+        <div class="container">
+            <div class="row" style="overflow:hidden">
+                <h2 class="hear_title">Do you have an interesting project?</h2>
+                <h4 class="hear_text">Do you have a business or any kind of idea? Please, don’t forget about importance of webpages. User friendly and clearly coded webpage makes your business better than others, because customers will see your face in your webpage. That is why just connect me and I will give you excellence coded webpage.</h4>
+                <button type="button" data-scroll-nav="6" class="btn hear_btn" name="button">HIRE ME !</button>
+            </div>
+        </div>
+    </section>
+    <!-- hire_me sectionun sonu -->
+
     <!--====== Clients ======-->
     {{--<section data-scroll-index="4" class="clients section-padding">--}}
         {{--<div class="container">--}}
@@ -380,7 +391,7 @@
                         <!-- info items -->
                         <div class="info-item">
                             <div class="icon">
-                                <span class="icon-map-pin"></span>
+                                <span class="icon-map-pin"> <i class="fa fa-map-marker" aria-hidden="true"></i></span>
                             </div>
                             <div class="info-content">
                                 <h6>Address</h6>
@@ -390,7 +401,7 @@
 
                         <div class="info-item">
                             <div class="icon">
-                                <span class="icon-phone"></span>
+                                <span class="icon-phone"> <i class="fa fa-phone" aria-hidden="true"></i></span>
                             </div>
                             <div class="info-content">
                                 <h6>Phone</h6>
@@ -400,11 +411,11 @@
 
                         <div class="info-item">
                             <div class="icon">
-                                <span class="icon-envelope"></span>
+                                <span class="icon-envelope"> <i class="fa fa-envelope-o" aria-hidden="true"></i></span>
                             </div>
                             <div class="info-content">
                                 <h6>E-mail</h6>
-                                <h5>{{ $contact[0]->email }}/h5>
+                                <h5>{{ $contact[0]->email }}</h5>
                             </div>
                         </div>
 
