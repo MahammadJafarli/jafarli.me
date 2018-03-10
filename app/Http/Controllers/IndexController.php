@@ -42,13 +42,15 @@ class IndexController extends Controller
 
         $social = Social::all();
 
+        $socials = Social::all();
+
         $category = Category::all();
 
         $portfolio = Portfolio::orderBy('id','DESC')->get();
 
 
 
-        return view('index2', compact('about','skill','service','post','contact','social','category','portfolio'));
+        return view('index2', compact('about','skill','service','post','contact','social','category','portfolio', 'socials'));
 
     }
 
